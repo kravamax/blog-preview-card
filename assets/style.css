@@ -51,7 +51,7 @@ a {
 
 h1,
 h2,
-h2,
+h3,
 p {
   margin: 0;
   padding: 0;
@@ -65,13 +65,15 @@ html {
 }
 
 body {
+  min-height: 100vh;
+  padding: var(--space-l);
   margin: 0;
-  padding: var(--space-m);
+
   background-color: var(--clr-yellow);
-  height: 100vh;
 }
 
 main {
+  min-height: calc(100vh - 2 * var(--space-l));
   display: grid;
   place-items: center;
   height: 100%;
