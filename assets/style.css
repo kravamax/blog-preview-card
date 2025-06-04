@@ -90,7 +90,12 @@ main {
 }
 .card__img {
   max-width: 100%;
+  min-height: 12.5rem;
   border-radius: var(--border-radius-m);
+
+  background-image: url(./images/illustration-article.svg);
+  background-size: cover;
+  background-position: center;
   overflow: hidden;
 }
 .card__container {
@@ -105,8 +110,7 @@ main {
   display: inline-block;
   border-radius: var(--border-radius-s);
   padding-inline: var(--space-m);
-  padding-block-start: var(--space-xs);
-  padding-block-end: var(--space-xs);
+  padding-block: var(--space-xs);
 
   font-size: var(--fsz-s);
   font-weight: var(--fw-bold);
@@ -129,7 +133,7 @@ main {
 
 .card__title a:hover,
 .card__title a:active,
-.card__title a:focus {
+.card__title a:focus-visible {
   color: var(--clr-yellow);
 }
 
